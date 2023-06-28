@@ -1,0 +1,20 @@
+<div>
+    {% extends "NuevaApp/inicio.html" %}
+    {% load static %}
+        {% block contenidoQueCambia%}
+        
+        <p class="cssUsuarios">Para cargar un usuario haga click en el boton "Cargar Usuario"</p>
+        <div class="formSetUsuario">
+            {% block setUsuarios%}
+
+
+
+        </div>
+        <div class="cargarUsuario" >
+            {% endblock %}
+        <a href="{% url 'setUsuarios'%}"><button class="btn btn-outline-primary" >Ingresar nuevo usuario</button></a>
+        </div>
+
+        {% endblock %}
+
+</div>

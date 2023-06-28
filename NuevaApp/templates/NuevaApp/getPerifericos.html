@@ -1,0 +1,20 @@
+<div>
+    {% extends "NuevaApp/compras.html" %}
+    {% load static %}
+    
+    {% block getCompras %}
+        <p>Consultar Profesor</p>
+        <form action="/NuevaApp/buscarJuego/" method="GET">
+            <input placeholder="Nombre" type="text" name="nombre" id="nombre">
+            <input type="submit" value="Buscar" class="btn btn-primary">
+        </form>
+
+        {% if comprar %}
+            {% for juegos in comprar %}
+                <li> {{lista.consola}} </li>
+                <li> {{lista.juego}} </li>
+                <li> {{lista.precio}} </li>
+            {% endfor %}
+        {% endif %}
+    {% endblock %}    
+</div>

@@ -1,0 +1,22 @@
+<div>
+    {% extends "NuevaApp/juegos.html" %}
+    {% load static %}
+    
+    {% block getJuegos %}
+        <p>Consultar Juegos</p>
+        <div class="formSetUsuario">
+        <form action="/NuevaApp/buscarJuego/" method="GET">
+            <input placeholder="juego" type="text" name="juego" id="juego">
+            <input type="submit" value="Buscar" class="btn btn-primary">
+        </form>
+        </div>
+
+        {% if juego %}
+            {% for juegos in juego %}
+                <li> {{lista.consola}} </li>
+                <li> {{lista.juego}} </li>
+                <li> {{lista.precio}} </li>
+            {% endfor %}
+        {% endif %}
+    {% endblock %}    
+</div>

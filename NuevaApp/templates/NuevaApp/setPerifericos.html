@@ -1,0 +1,16 @@
+<div>
+    {% extends "NuevaApp/perifericos.html" %}
+    {% load static %}
+    
+    
+    {% block setPerifericos %}
+    <div  class="formSetUsuario">
+    <form action="/NuevaApp/setPerifericos/" method="post"> {% csrf_token %}
+        <table>
+            {{ miFormulario3.as_table }}
+        </table>
+        <input type = "submit" value="Enviar" class="btn btn-primary">
+    </form>
+    </div>
+    {% endblock %}
+</div>

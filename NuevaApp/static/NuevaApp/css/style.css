@@ -1,0 +1,78 @@
+.bienvenido{
+    text-align: center !important;
+    margin-top: 50px;
+    margin: 65px;
+    font-size: 50px;
+    color: white;
+}
+
+.imagen {
+    text-align: center; /* Alinea el contenido del div al centro horizontalmente */
+  }
+  
+  .imagen img {
+    display: inline-block; /* Permite ajustar el margen de la imagen */
+    margin: 0 auto; /* Centra la imagen horizontalmente dentro del div */
+    margin:-50px;
+    width: 1500px;
+    height: 500px;
+  }
+
+body{
+    background-image: url("https://img.freepik.com/foto-gratis/textura-negra_1205-327.jpg");
+    background-repeat:repeat;
+}
+
+.formSetUsuario{
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+
+}
+
+.formSetUsuario input {
+  width: 90%;
+  height: 30px;
+  margin: 0.5rem;
+  color: black;
+
+}
+
+.formSetUsuario button {
+  padding: 0.5em 1em;
+  border: none;
+  background: rgb(100, 200, 255);
+  cursor: pointer;
+
+}
+.cargarUsuario{
+         
+    /* background-image: linear-gradient(to right, #314755 0%, #26a0da  51%, #314755  100%); */
+    margin: 70px;
+    padding: -1px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    /* box-shadow: 0 0 20px #eee; */
+    border-radius: 10px;
+    display: block;
+  
+
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+   
+}
+
+.cssUsuarios{
+  text-align: center;
+  color: white;
+  font-size: 300%;
+}

@@ -1,0 +1,21 @@
+<div>
+    {% extends "NuevaApp/inicio.html" %}
+    {% load static %}
+        {% block contenidoQueCambia%}
+        
+        <p class="cssUsuarios">Perifericos</p>
+        <div class="formSetUsuario">
+            {% block setPerifericos%}
+
+
+
+        </div>
+        <div class="cargarUsuario" >
+            {% endblock %}
+        <a href="{% url 'setPerifericos'%}"><button class="btn btn-outline-primary" >Ingresar nuevo periferico</button></a>
+        <a href="{% url 'getPerifericos'%}"><button class="btn btn-outline-primary" >Buscar Periferico</button></a>
+        </div>
+
+        {% endblock %}
+
+</div>

@@ -1,0 +1,23 @@
+<div>
+    {% extends "NuevaApp/inicio.html" %}
+    {% load static %}
+        {% block contenidoQueCambia%}
+        
+        <p class="cssUsuarios">Juegos</p>
+            <div class="formSetUsuario">
+                {% block setJuegos %}
+                {% endblock %}
+            </div>
+            <div>
+                {% block getJuegos %}
+                {% endblock %}
+            </div>
+              
+    <div class="cargarUsuario" >
+        <a href="{% url 'setJuegos'%}"><button class="btn btn-outline-primary" >Ingresar nuevo juego</button></a>
+        <a href="{% url 'getJuegos' %}"><button class="btn btn-outline-primary" >Buscar Juego</button></a>
+    </div>
+
+        {% endblock %}
+
+</div>

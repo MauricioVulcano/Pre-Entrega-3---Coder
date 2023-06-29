@@ -1,4 +1,5 @@
-tercerpre-entregaChehda
+Pre Entrega 3 - Mauricio Vulcano
+
 Proyecto Free Market
 Este proyecto es una aplicación web desarrollada con Django y Bootstrap. Proporciona información sobre juegos y perifericos
 
